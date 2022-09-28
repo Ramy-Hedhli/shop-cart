@@ -22,6 +22,7 @@
 		</a>
 		<input class="searchbar" onkeyup="Serch()" type="text" name="search" placeholder="Search..">
 		<ul class="BarreMenu">
+			<!--serchbar-->
 			<!-- liste non ordonnée representant la barre de navigation-->
 			<li><a href="#Accueil">Accueil</a></li>
 			<li><a href="#Panier">Panier</a></li>
@@ -31,24 +32,29 @@
 
 	<main>
 		<section class="EnTete">
+			<!--en tête du panier-->
 
 			<H2 class="MonPanier">Mon panier</H2>
 			<div class="BTNUP">
 				<a href="ContinuerMesAchat">
 					<button class="bouton1" type="ContinuerMesAchat">Continuer mes achat</button>
 				</a>
+				<!--pour valider la commande et passer au payement-->
 				<a href="ValiderMaCommande">
 					<button class="bouton2" type="ValiderMaCommande">Valider ma commande</button>
 				</a>
+				<!--retour à l'accueil-->
 			</div>
 		</section>
 
 		<div class="container">
-			<!--contient tout les element du panier-->
+			<!--contient tout les elements du panier avec prix total-->
 			<section id="cart">
+				<!--contient les articles sans prix total-->
 				<article id="article1" class="product">
 					<!--premier article clavier-->
 					<header>
+						<!--à gauche image article + bouton remove -->
 						<!--produit-->
 						<a id="remove1" class="remove">
 							<img src="./img/CLAVIER GAMER REDRAGON K585 DITI RGB (K585).jpg" alt="Gamming Keybord">
@@ -60,7 +66,7 @@
 						<!--designation-->
 
 						<h1>Clavier Gamer <img id="heart1" class="favori" style="height:20px; width : 20px;"
-								src="./icon/coeur.svg" alt="Coeur">
+								src="./icon/heart.png" alt="Coeur">
 						</h1>
 
 						CLAVIER GAMER REDRAGON K585 DITI RGB (K585)
@@ -68,10 +74,11 @@
 
 
 					<footer class="content">
+						<!--quantité-->
 						<span id="qt-minus1" class="qt-minus">-</span>
 						<span id="qt1" class="qt">1</span>
 						<span id="qt-plus1" class="qt-plus">+</span>
-						<h2 id="full-price1" class="full-price"> </h2>
+						<h2 id="full-price1" class="full-price"></h2>
 
 
 						<h2 id="price1" class="price">
@@ -94,7 +101,7 @@
 					<div class="content">
 
 						<h1>PC Portable <img id="heart2" class="favori" style="height:20px; width : 20px;"
-								src="./icon/coeur.svg" alt="Coeur"></h1>
+								src="./icon/heart.png" alt="Coeur"></h1>
 
 						pc-portable-asus-s509jb-i3-10e-gen-4-go-silver-avec-sim-orange-offerte-60-go
 
@@ -106,9 +113,7 @@
 						<span id="qt2" class="qt">1</span>
 						<span id="qt-plus2" class="qt-plus">+</span>
 
-						<h2 id="full-price2" class="full-price">
-
-						</h2>
+						<h2 id="full-price2" class="full-price"></h2>
 
 						<h2 id="price2" class="price">
 							980
@@ -117,6 +122,7 @@
 				</article>
 
 				<article id="article3" class="product">
+					<!--"3eme article"-->
 					<header>
 						<a id="remove3" class="remove">
 							<img src="./img/rame-papier-format-a4-navigator.jpg" alt="Ram papier">
@@ -128,7 +134,7 @@
 					<div class="content">
 
 						<h1>Papier A4 <img id="heart3" class="favori" style="height:20px; width : 20px;"
-								src="./icon/coeur.svg" alt="Coeur"></h1>
+								src="./icon/heart.png" alt="Coeur"></h1>
 
 						rame-papier-format-a4-navigator-80g
 					</div>
@@ -139,8 +145,7 @@
 						<span id="qt3" class="qt">1</span>
 						<span id="qt-plus3" class="qt-plus">+</span>
 
-						<h2 id="full-price3" class="full-price">
-						</h2>
+						<h2 id="full-price3" class="full-price"></h2>
 
 						<h2 id="price3" class="price">
 							18.500
@@ -156,13 +161,13 @@
 			<!--pied du panier-->
 			<div class="container clearfix">
 
-				<div class="left">
+				<!--<div class="left">
 					<h2 class="subtotal">SousTotal: <span id="sstotal"></span>Dt</h2>
 					<h3 class="shipping">Frais de port: <span id="FP">6</span>Dt</h3>
-				</div>
+				</div>-->
 
 				<div class="right">
-					<h1 class="total">Total: <span id="total"></span>Dt</h1>
+					<h1 class="total">Total: <span id="total">1049.480</span>Dt</h1>
 				</div>
 			</div>
 		</footer>
